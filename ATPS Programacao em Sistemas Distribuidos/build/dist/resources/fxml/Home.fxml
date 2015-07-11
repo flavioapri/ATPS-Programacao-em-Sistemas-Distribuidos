@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.flavioaprb.jogodavelha.controller.MainController">
+   <children>
+      <Text layoutX="175.0" layoutY="96.0" stroke="#131400" strokeType="OUTSIDE" text="JOGO DA VELHA" textAlignment="CENTER">
+         <font>
+            <Font name="Goudy Stout" size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.6476190476190476">
+               <stops>
+                  <Stop color="#ffe601" />
+                  <Stop color="#3af506" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="128.0" fitWidth="115.0" layoutX="60.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jogodavelha.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="252.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão 1.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="txPergunta" layoutX="106.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Em qual servidor deseja se conectar?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <VBox layoutX="135.0" layoutY="201.0" spacing="10.0">
+         <children>
+            <RadioButton id="rbLocal" fx:id="rbLocal" mnemonicParsing="false" text="Local (neste computador)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="servidor" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="rbRemoto" fx:id="rbRemoto" mnemonicParsing="false" text="Remoto (outro computador)" toggleGroup="$servidor">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <TextField fx:id="txtIp" disable="true" layoutX="265.0" layoutY="312.0" promptText="endereço ip do computador" />
+      <Label id="tfIp" fx:id="lblIp" disable="true" layoutX="115.0" layoutY="311.0" text="IP do computador">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="btnConectar" fx:id="btnConectar" disable="true" layoutX="217.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@../styles/style.css" text="Conectar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <CheckBox id="cbServidor" fx:id="cbCriarServidor" disable="true" layoutX="189.0" layoutY="274.0" mnemonicParsing="false" text="Criar Servidor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

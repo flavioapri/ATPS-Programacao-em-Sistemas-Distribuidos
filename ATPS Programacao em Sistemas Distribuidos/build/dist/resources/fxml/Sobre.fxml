@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.flavioaprb.jogodavelha.controller.SobreController">
+   <children>
+      <Text layoutX="217.0" layoutY="102.0" stroke="#131400" strokeType="OUTSIDE" text="JOGO DA VELHA" textAlignment="CENTER">
+         <font>
+            <Font name="Goudy Stout" size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.6476190476190476">
+               <stops>
+                  <Stop color="#ffe601" />
+                  <Stop color="#3af506" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="128.0" fitWidth="115.0" layoutX="103.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jogodavelha.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="294.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão 1.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATPS de Programação em Sistemas Distribuídos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="185.5" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistemas de Informação 8NA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="202.5" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daiana Paula Tizer Parra ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="200.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fabio de Paula dos Anjos" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.7607421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flávio Aparecido Ribeiro" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.1767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="210.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samuel Raul Gennari" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="225.57421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnContinuar" layoutX="252.0" layoutY="371.0" mnemonicParsing="false" text="Continuar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

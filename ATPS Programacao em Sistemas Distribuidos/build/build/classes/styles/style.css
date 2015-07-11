@@ -1,0 +1,20 @@
+#txJogoDaVelha {
+    -fx-fill: linear-gradient(from 0.0% 0.0% to 100.0% 200.0%, repeat, yellow 0.0%, green 50.0%);
+    -fx-font-size: 35;
+    -fx-stroke: black;
+    -fx-stroke-width: 1.0;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#f0ff35, #a9ff00), 
+    radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#a9ff00, #f0ff35);
+}
